@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<script src="https://kit.fontawesome.com/38878f3fe8.js" crossorigin="anonymous"></script>  
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Services - Khethelo Shabangu</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+            background: #080808;
+            color: #ffff;
+            font-family: 'Poppins', sans-serif;
+        }
+        #services {
+            padding: 50px 0;
+            background-image: url('me.png');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .container {
+            padding: 20px 10%;
+            position: relative; /* For layering context */
+            z-index: 1; /* Ensures text is above the background */
+        }
+        .sub-title {
+            font-size: 36px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .services-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 40px;
+        }
+        .service-item {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        .service-item h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .service-item p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .service-item a {
+            color: orange;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <img src="images/logo.jpg" class="logo" alt="Khethelo Shabangu Logo">
+        <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="main.html">About Me</a></li> <!-- Updated link -->
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+    </nav>
+
+    <!-- Services Section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div class="service-item">
+ <i class="fa-solid fa-code" style="color: #fcba3f;"></i>
+                    <h2>Web Design</h2>
+                    <p>I specialize in full-stack web development, proficient in both backend and frontend technologies.</p>
+                    <a href="web-design.html">Learn more</a>
+                </div>
+                <div class="service-item">
+                    <i class="fa-solid fa-database" style="color: #eda034;"></i>
+                    <h2>Database Management</h2>
+                    <p>I have extensive experience in database design, development, and management, ensuring optimal performance, scalability, and security.</p>
+                    <a href="database-management.html">Learn more</a>
+                </div>
+                <div class="service-item">
+                    <i class="fa-brands fa-app-store" style="color: #d99a34;"></i>
+                    <h2>App Development</h2>
+                    <p>I develop applications for both desktop and mobile platforms, ensuring a seamless user experience across devices.</p>
+                    <a href="app-development.html">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khethelo Shabangu - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>  
+    <div id="header">
+        <div class="container">
+            <nav class="nav">
+                <img src="images/logo.jpg" class="logo" alt="Khethelo Shabangu Logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About Me</a></li> <!-- Updated link to anchor -->
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Khethelo Shabangu</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/me.jpg" alt="Khethelo Shabangu">
+                </div>
+                <div class="about-col-2">
+                    <h1>About Me</h1>
+                    <p>Hi, I am Khethelo Shabangu, a skilled web and program developer with expertise in both front and backend development.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="showTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="showTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="showTab('education')">Education</p>
+                    </div>
+                    <div class="tab-content">
+                        <div id="skills" class="tab-list">
+                            <ul>
+                                <li>Designing web/app interfaces</li>
+                                <li>Web development</li>
+                                <li>App development</li>
+                            </ul>
+                        </div>
+                        <div id="experience" class="tab-list" style="display: none;">
+                            <ul>
+                                <li>Civil engineering lab technician</li>
+                                <li>Freelance developer for various projects</li>
+                            </ul>
+                        </div>
+                        <div id="education" class="tab-list" style="display: none;">
+                            <ul>
+                                <li>Bachelor's in Computer Science (currently studying)</li>
+                                <li>Web Development Bootcamp</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="web1.js"></script>
+</body>
+</html>

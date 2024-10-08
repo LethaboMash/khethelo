@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Khethelo Shabangu</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+            background: #080808;
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+        }
+        #portfolio {
+            padding: 50px 0;
+            background-image: url('portfolio-bg.jpg'); /* Add your background image URL here */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .container {
+            padding: 20px 10%;
+        }
+        .sub-title {
+            font-size: 36px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .portfolio-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 40px;
+        }
+        .portfolio-item {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        .portfolio-item img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .portfolio-item h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .portfolio-item p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        .portfolio-item a {
+            color: orange;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <img src="images/logo.jpg" class="logo" alt="Khethelo Shabangu Logo">
+        <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+        </ul>
+    </nav>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Portfolio</h1>
+            <div class="portfolio-list">
+                <div class="portfolio-item">
+                   
+                    <h2>Personal Blog</h2>
+                    <p>A responsive personal blog built with HTML, CSS, and JavaScript. It features a clean design and easy navigation.</p>
+                    <a href="project1.html">View Project</a>
+                </div>
+                <div class="portfolio-item">
+                   
+                    <h2>E-commerce Website</h2>
+                    <p>An e-commerce platform created using React and Node.js, complete with shopping cart functionality and payment integration.</p>
+                    <a href="project2.html">View Project</a>
+                </div>
+                <div class="portfolio-item">
+                   
+                    <h2>Portfolio Website</h2>
+                    <p>A portfolio website designed to showcase my projects, built with Bootstrap and PHP for backend support.</p>
+                    <a href="project3.html">View Project</a>
+                </div>
+                <div class="portfolio-item">
+                    
+                    <h2>Weather App</h2>
+                    <p>A weather application that uses the OpenWeather API to fetch real-time weather data and display it to users.</p>
+                    <a href="project4.html">View Project</a>
+                </div>
+                <div class="portfolio-item">
+                   
+                    <h2>Task Management Tool</h2>
+                    <p>A task management tool built with Vue.js and Firebase, allowing users to create, update, and delete tasks.</p>
+                    <a href="project5.html">View Project</a>
+                </div>
+                <div class="portfolio-item">
+                   
+                    <h2>Recipe Finder</h2>
+                    <p>An application that helps users find recipes based on ingredients they have, using the Edamam API.</p>
+                    <a href="project6.html">View Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
